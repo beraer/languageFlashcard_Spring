@@ -1,0 +1,9 @@
+spring:
+  banner:
+    location: logo.txt
+
+pl:
+  edu:
+    pja:
+      tpo02:
+        filename: flashcards.csv
