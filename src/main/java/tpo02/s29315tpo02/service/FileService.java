@@ -25,7 +25,8 @@ public class FileService {
 
     @PostConstruct
     public void loadEntriesFromFile(){
-        try(BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(properties.getFilename()), StandardCharsets.UTF_8))) {
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/" + properties.getFilename()),
+                StandardCharsets.UTF_8))) {
             String line;
             while((line = br.readLine()) != null){
                 String[] words = line.split(",");
