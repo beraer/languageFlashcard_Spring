@@ -1,10 +1,12 @@
 package tpo02.s29315tpo02.repository;
 
+import org.springframework.stereotype.Repository;
 import tpo02.s29315tpo02.model.Entry;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class EntryRepository {
     private List<Entry> entries = new ArrayList<>();
 

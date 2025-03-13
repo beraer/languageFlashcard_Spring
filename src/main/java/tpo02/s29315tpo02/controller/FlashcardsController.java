@@ -1,5 +1,6 @@
 package tpo02.s29315tpo02.controller;
 
+import org.springframework.stereotype.Component;
 import tpo02.s29315tpo02.model.Entry;
 import tpo02.s29315tpo02.repository.EntryRepository;
 import tpo02.s29315tpo02.service.display.DisplayService;
@@ -7,6 +8,7 @@ import tpo02.s29315tpo02.service.display.DisplayService;
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class FlashcardsController {
     private DisplayService displayService;
     private EntryRepository entryRepository;

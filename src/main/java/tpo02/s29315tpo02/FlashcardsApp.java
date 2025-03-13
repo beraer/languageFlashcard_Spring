@@ -1,9 +1,11 @@
 package tpo02.s29315tpo02;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import tpo02.s29315tpo02.controller.FlashcardsController;
 
+@SpringBootApplication(scanBasePackages = "tpo02.s29315tpo02")
 public class FlashcardsApp {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(FlashcardsApp.class, args);
