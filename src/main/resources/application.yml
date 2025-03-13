@@ -1,6 +1,6 @@
 spring:
   banner:
-    location: logo.txt
+    location: logo-app.txt
 
 pl:
   edu:
