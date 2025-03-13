@@ -5,9 +5,7 @@ import tpo02.s29315tpo02.model.Entry;
 
 import java.util.List;
 
-@Service
-public class DisplayService {
-    public void display(List<Entry> entries) {
+public interface DisplayService {
+    void display(List<Entry> entries);
 
-    }
 }
