@@ -1,6 +1,5 @@
 package tpo02.s29315tpo02.service;
 
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tpo02.s29315tpo02.config.FlashcardsProperties;
@@ -22,7 +21,6 @@ public class FileService {
         this.properties = properties;
     }
 
-    @PostConstruct
     public void loadEntriesFromFile(){
         try(BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/" + properties.getFilename()),
                 StandardCharsets.UTF_8))) {
