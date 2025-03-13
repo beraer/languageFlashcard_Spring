@@ -21,9 +21,9 @@ public class FlashcardsController {
     }
 
     public void run(){
-        String choice = scanner.nextLine();
         printOptions();
         while(true){
+            String choice = scanner.nextLine();
             switch(choice){
                 case "1":
                     addNewWord();
@@ -55,7 +55,7 @@ public class FlashcardsController {
     private void displayWords() {
         List<Entry> entries = entryRepository.getEntries();
         System.out.println("\n---dictionary content---");
-        entries.forEach(entry -> {displayService.display(entries);});
+        displayService.display(entries);
     }
 
     private void runTest() {

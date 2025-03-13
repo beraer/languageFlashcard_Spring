@@ -1,6 +1,8 @@
 spring:
   banner:
     location: logo-app.txt
+  profiles:
+    active: original
 
 pl:
   edu:
